@@ -1,0 +1,26 @@
+Q1. It represents the permissions of the current directory.
+(d) First element represents directory flag.
+Next 3 element sequence represents owner permissions (read, write, execute)
+Second 3 elements sequence represents group permissions.
+Third 3 element sequence represents everyone else permissions
+
+Q2. That means the user does not have script execution permissions.
+Command to alter permissions : chmod +x test.sh
+
+Q3. The script is expecting a parameter which is not pased when running the script therefore it has no value when 
+executing the line that compares both variables.
+
+when executing the script should be ran like /cpu_count.sh 1
+
+Q4. Directory Structure
+
+Assuming the current directory is Documents/
+
+mkdir lecture2/topic
+mv lecture3/topic/slides.pdf lecture2/topic/slides.pdf
+
+
+Q5. -eq operator is used to compare integers. As both variables store 
+string values, the comparison should be made with = operator
+
+
