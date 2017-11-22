@@ -1,0 +1,6 @@
+
+
+./loadtest parmeter 
+
+
+pkill
