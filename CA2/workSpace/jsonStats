@@ -1,0 +1,15 @@
+
+#echo running mpstat for intervals of $1 secs up to $2 secs in json format
+
+#pipe mpstats  into jq
+mpstat -o JSON 1 1
+
+#mpstat -o JSON 1 1 | jq '.sysstat.hosts[0].statistics[0]."cpu-load"[0].cpu'
+
+#mpstat -o JSON 1 1 | jq '100 - .sysstat.hosts[0].statistics[0]."cpu-load"[0].idle'
+
+#last line is the utilization
+#background the load test
+# compute utilization
+# check is floating point
+
